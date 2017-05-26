@@ -1,7 +1,7 @@
 map ,pd :call PhpDoc()<Cr>
 imap ,pd <Esc>,pd
 
-colorscheme desert 
+colorscheme marssolinha
 " set font
 set gfn=Consolas:h10:cANSI
 
