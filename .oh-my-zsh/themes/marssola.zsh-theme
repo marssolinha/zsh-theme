@@ -5,9 +5,9 @@ local ret_status_before="%(?:%{$fg_bold[green]%}❯%{$fg_bold[blue]%}❯%{$fg_bo
 
 #PROMPT='${ret_status_before}%{$fg_bold[blue]%}%m:%{$fg[cyan]%}%~%u$(git_prompt_info)%{$reset_color%} ${ret_status}%{$reset_color%}'
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[red]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[green]%}%{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY=""
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%} ✹"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✓"
 ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} ✚"
 ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[yellow]%} ✹"
