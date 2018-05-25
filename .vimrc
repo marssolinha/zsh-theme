@@ -81,11 +81,12 @@ Plugin 'tobyS/pdv'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'm2mdas/phpcomplete-extended'
 Plugin 'shawncplus/phpcomplete.vim'
-Bundle 'lumiliet/vim-twig'
-Bundle "lepture/vim-jinja"
+
+Plugin 'nelsyeung/twig.vim'
+
 " OSX stupid backspace fix
 
-au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
+au BufNewFile,BufRead *.tpl set filetype=html.twig
 
 set backspace=indent,eol,start
 
@@ -170,7 +171,7 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " Tagbar
 map <C-n> :NERDTreeToggle<CR>
-map <F7> mzgg=G`z
+map <C-i> mzgg=G`z
 map <F2> :set nonumber<CR>
 map <F3> :set number<CR>
 nnoremap <C-Left>  :tabprevious<CR>
