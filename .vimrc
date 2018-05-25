@@ -81,9 +81,12 @@ Plugin 'tobyS/pdv'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'm2mdas/phpcomplete-extended'
 Plugin 'shawncplus/phpcomplete.vim'
-Plugin 'evidens/vim-twig'
-
+Bundle 'lumiliet/vim-twig'
+Bundle "lepture/vim-jinja"
 " OSX stupid backspace fix
+
+au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
+
 set backspace=indent,eol,start
 
 " Install L9 and avoid a Naming conflict if you've already installed a
