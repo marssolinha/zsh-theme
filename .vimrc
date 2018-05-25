@@ -170,4 +170,9 @@ map <C-n> :NERDTreeToggle<CR>
 map <F7> mzgg=G`z
 map <F2> :set nonumber<CR>
 map <F3> :set number<CR>
-
+nnoremap <C-Left>  :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+nnoremap <C-t>     :tabnew<CR>
+nnoremap <C-w>     :tabclose<CR>
+nnoremap <F5>      :w<CR>
+nnoremap <F4>      :wq<CR>
