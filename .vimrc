@@ -73,9 +73,14 @@ Plugin 'kablamo/vim-git-log'
 Plugin 'gregsexton/gitv'
 
 " PHP Support
-Plugin 'Shougo/vimproc'
-Plugin 'Shougo/unite.vim'
+" Plugin 'phpvim/phpcd.vim' - bugado
+" Plugin 'lvht/phpcd.vim'
+" Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'tobyS/pdv'
+" Plugin 'php.vim'
+Plugin 'Shougo/vimproc.vim'
 Plugin 'm2mdas/phpcomplete-extended'
+Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'evidens/vim-twig'
 
 " OSX stupid backspace fix
@@ -115,7 +120,7 @@ set softtabstop=2
 set shiftwidth=2
 
 set autoindent
-set number
+set nu
 set ruler
 set ignorecase
 set smartcase
@@ -131,8 +136,8 @@ set laststatus=2
 set cul
 
 set wildmenu
-set wildmode=longest:list,full
-
+" set wildmode=longest:list,full
+set wildmode=list:longest,full
 " Ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-l>"
@@ -163,4 +168,6 @@ let g:ctrlp_cmd = 'CtrlP'
 " Tagbar
 map <C-n> :NERDTreeToggle<CR>
 map <F7> mzgg=G`z
+map <F2> :set nonumber<CR>
+map <F3> :set number<CR>
 
